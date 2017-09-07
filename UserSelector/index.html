@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UserSelector</title>
+    <link type="text/css" rel="stylesheet" href="./css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <button class="btn_upmodal">弹出</button>
+    <!-- <div class="container">
+
+         <div class="user_Container">
+            <div class="user_content">
+                <ul class="fl select_first">
+                    <li>电视</li>
+                    <li>冰箱</li>
+                    <li class="selected">微波炉</li>
+                    <li>扫把</li>
+                    <li>空调</li>
+                </ul>
+                <div class="fl panel">
+                    <button class="btn_add">添加</button>
+                    <button class="btn_del">删除</button>
+                </div>
+                <ul class="fl select_second">
+
+                </ul>
+            </div>
+            <div class="user_strap">
+                <button class="btn_save fl">保存</button>
+                <button class="btn_cancel fl">取消</button>
+            </div>
+        </div> 
+    </div>-->
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var userSelect = new UserSelector({
+            data: [
+                { value: 0, text: '电视' },
+                { value: 1, text: '冰箱' },
+                { value: 2, text: '微波炉' },
+                { value: 3, text: '扫把' },
+                { value: 4, text: '空调' }
+            ],
+            show: 0
+        });
+        document.querySelector(".btn_upmodal").addEventListener("click", function (event) {
+            if (userSelect.status) {
+                userSelect.hide();
+            } else {
+                userSelect.show();
+            }
+        }, false)
+    }
+
+</script>
+
+</html>

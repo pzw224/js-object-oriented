@@ -1,0 +1,142 @@
+.container{
+    background: #fff;
+    position: fixed;
+    height:100%;
+    width: 100%;
+}
+.user_Container{
+    background: #eee;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top:50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+.select_first{
+    width: 250px;
+    background: #fff;
+    height:100%;
+}
+.select_second{
+    width: 250px;
+    background: #fff;
+    height:100%;
+}
+.panel{
+    width: 98px;
+    height: 100%;
+    border: 1px solid #444;
+    background: #ccc;
+}
+
+.user_Container ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #86EB86;
+    background: #fec;
+    font-size: 20px;
+    border: 1px dashed #ccc;
+}
+
+.user_Container ul li:hover{
+    background: #0087FF;
+    color: #ECAAB0;
+    cursor: pointer;
+}
+
+.user_Container ul li.selected{
+    background: #222;
+    color: #ffc;
+}
+
+.user_content{
+    width:100%;
+    height: 94%;
+}
+
+.user_strap{
+    height: 6%;
+    width: 100%;
+}
+
+.btn_upmodal{
+    position: absolute;
+    background: #222;
+    color: #ffc;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    width: 120px;
+    margin-top:20px;
+}
+
+.btn_add{
+    background: #222;
+    color: #ffc;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin-top:200px;
+}
+
+.btn_add:hover{
+    background: #fff;
+    color: #222;
+    cursor: pointer;
+}
+
+.btn_del{
+    background: #e00;
+    color: #efe;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn_del:hover{
+    background: #fff;
+    color: #222;
+    cursor: pointer;
+}
+
+.btn_save{
+    background: #B8DFEA;
+    color: #353330;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    width: 50%;
+}
+
+.btn_save:hover{
+    background: #E4F69C;
+    color: #F46B6B;
+    cursor: pointer;
+}
+
+.btn_cancel{
+    background: #efe;
+    color: #F8C767;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    width: 50%;
+}
+
+.btn_cancel:hover{
+    background: #E4F69C;
+    color: #F46B6B;
+    cursor: pointer;
+}
